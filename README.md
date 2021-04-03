@@ -1,4 +1,4 @@
-https://git.heroku.com/infinite-reaches-67520.git
+https://infinite-reaches-67520.herokuapp.com
 
 Para iniciar lo primero fue crear la página:
 rails g controller posts create dashboard index
