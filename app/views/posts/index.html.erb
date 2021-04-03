@@ -1,0 +1,16 @@
+<nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand">My travel blog</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+</nav>
+<br>
+<div class="container">
+    <% @posts.each do |post|%>
+        <h4 class="mb-4"><%= post.title %></h4>
+        <img src="<%= post.image_url %>" class="mb-4 w-50">
+        <p><%= post.content %></p>
+        <p>Posted on: <%= post.created_at %></p>
+    <% end %>
+</div>
